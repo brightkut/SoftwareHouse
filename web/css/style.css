@@ -1,0 +1,23 @@
+#header{
+padding-left: 5%;
+padding-right: 5%;
+padding-top: 5%;
+padding-bottom: 5%;
+width: 100%;
+height: auto;
+max-width: 100%;
+
+background: url('../img/header.jpg'); 
+}
+#topic{
+   top: 100px;
+   font-family: sans-serif;
+   color: yellow;
+   font-size: 6vw;
+   text-align: center;
+    
+}
+#box{
+    border: 2px solid yellow;
+    border-radius: 22px;
+}
