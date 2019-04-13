@@ -21,3 +21,28 @@ background: url('../img/header.jpg');
     border: 2px solid yellow;
     border-radius: 22px;
 }
+
+#listnav li a{
+  color: lightgrey;
+}
+#listnav li a:hover{
+    color: white;
+  }
+#iconcoder{
+    color: lightgrey;
+    margin-right: 3%;
+}
+#iconcoder:hover{
+    color: white;
+}
+#main{
+   
+    background-image: url("../img/bg2.jpg");
+    height: 100%;
+    position: relative;
+}
+#boxinside{
+    background-color: red;
+    
+
+}
