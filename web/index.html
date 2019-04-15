@@ -12,30 +12,26 @@
   </head>
   <body>
     
-    <div class="container-fluid"  id ="header">
-   
-      
-          <div class="container" id="box">
-              <h1 id="topic">Welcome To My Website</h1>
-             
-          </div>
-          
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <!--button collaspe-->
       <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="collapse_target">
+
+      <div class="collapse navbar-collapse" id="collapse_target" >
 
       <span class="navbar-text" id="iconcoder">Coder</span>
-     <ul class="navbar-nav" id ="listnav">
+      <ul class="navbar-nav" id ="listnav">
       
+      <!--item about -->
       <li class="nav-item">
-        <a class="nav-link">About</a>
+        <a class="nav-link"id="about">About</a>
       </li>
+      <!--item dropdown-->
       <li class="nav-item dropdown" >
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">Programing</a>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" >Programing</a>
         <div class="dropdown-menu" aria-labelledby="dropdown_target">
           
           <ul class="navbar-nav">
@@ -50,22 +46,23 @@
         </div>
 
       </li>
-
+      
      </ul>
+   
+     <input id="inputsearch" class="form-control" type="search" placeholder="Search.." aria-label="Search">
+     <button id="btnsearch" class="btn btn-success" type="submit">Search</button>
+    
+    </div>
+    </nav>
+    <div id="main">
+      <div class="box">
+          <h1>Code For Your Life</h1>
+          <button class="btn btn-primary btn-lg"id ="getstart">Get Start</button>
+      </div>
+
+      
     </div>
   
-    </nav>
-    <div id='main' >
-      <div  id="boxinside">
-        <h1>Code For Your Life</h2>
-        <button>ss</button>
-
-
-
-      </div>
-    </div>
-    
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
