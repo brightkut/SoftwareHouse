@@ -1,5 +1,5 @@
 #listnav{
-    margin-left:40%;
+    margin-left:55%;
 }
 #listnav li a{
   color: white;
@@ -20,7 +20,7 @@
 }
 
 #inputsearch{
-    width: 30%;
+    width: 15%;
     margin-left: 2%;
     margin-right: 1%;
 }
@@ -29,20 +29,157 @@
 }
 #main{
     height: 100%;
-    background: grey;
+    background-image: url("../img/background.png");
+    background-size: cover;
     text-align: center
 }
 .box{
     position: absolute;
-    top: 50%;
-    right: 35%;
+    top: 35%;
+    right: 20%;
     text-align: center;
+   
+    height: 40%;
+    width: 60%;
    
    
 }#getstart{
-    margin-top: 10%;
+    margin-top: 2%;
+  
+    
 }
-h1{
+#getstart.toggled{
+    display: none;
+
+}
+
+#yes ,#no{
+    margin-top: 2%;
+    display: none;
+   
+}
+#no{
+    position: absolute;
+    right: 40%;
+}
+#yes{
+    position: absolute;
+    right: 50%;
+}
+#yes.toggled ,#no.toggled{
+    display: block;
+}
+
+
+.con{
+    
+    margin-top: 2%;
+    height: 23%;
+
+}.con2{
+   
+    margin-top: 2%;
+    height: 23%;
+}
+.con1{
+   
+    height: 23%;
+    
+}
+#nhead{
     color:white;
     font-family: 'Courier New', Courier, monospace
+
+}
+
+#iconcomputer{
+    font-size: 60px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#learn ,#box3{
+    margin-top: 0%;
+    width: 100%;
+    height: 85%;
+    display: flex;
+}
+#learnpic ,#blogpic{
+    flex: 1;
+
+}#learndescribe ,#blogdescribe{
+    flex:1;
+
+}#pic{
+ width: 100%;
+ height: 100%;
+
+}#book{
+    position: relative;
+    left: 35%;
+    top: 35%;
+    font-size: 150px;
+}#learntext ,#blogtext{
+    width: 90%;
+    height: 50%;
+    margin-top: 32%;
+    margin-bottom: 25%;
+    margin-left: 5%;
+}
+#textplearn ,#textpblog{
+    font-family: 'Times New Roman', Times, serif
+
+}
+#texthlearn ,#texthblog{
+    font-family: sans-serif
+
+}#box2{
+    margin-top: 0%;
+    width: 100%;
+    height: 85%;
+    background-image: url("../img/community.jpg");
+    background-size: 100% 100%;
+
+}#blogger{
+
+    position: relative;
+    left: 35%;
+    top: 35%;
+    font-size: 150px;
+}.footerbox{
+    height: 40%;
+}#tabfoot{
+    height: 20%;
+    background: #212529;
+    color: white;
+    text-align: center;
+    
+}#confoot{
+    height: 80%;
+}
+#confoot ul{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 18%;
+    
+   
+    
+}
+h5{
+   position: relative;
+   top: 30%;
+}#confoot ul li{
+    display: inline;
+}
+#confoot ul li i{
+    font-size: 60px;
+    margin-left: 10%;
+}.container{
+    height: 100%;
+}#contact{
+    width: 60%;
+    position: relative;
+    top: 35%;
+    left: 33%;
+   
 }

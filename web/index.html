@@ -3,17 +3,57 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <!--responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--font awesome bootstrap-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--jquery cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>SoftwareHouse</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <script>
+      $(document).ready(function(){
+        
+        
+
+    
+        
+        $("#getstart").click(function(){
+          
+          $("#yes").toggleClass("toggled");
+          $("#no").toggleClass("toggled");
+          $("#getstart").toggleClass("toggled");
+          $("#nhead").text("Are you Sure ?");
+
+        });
+        $("#no").click(function(){
+          $("#yes").toggleClass("toggled");
+          $("#no").toggleClass("toggled");
+          $("#getstart").toggleClass("toggled");
+          $("#nhead").text("Code For Your Life");
+
+
+
+        });
+      });
+  
     
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    </script>
+
+      
+
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <!--button collaspe-->
       <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
         <span class="navbar-toggler-icon"></span>
@@ -28,6 +68,9 @@
       <!--item about -->
       <li class="nav-item">
         <a class="nav-link"id="about">About</a>
+      </li>
+      <li>
+        <a class="nav-link" >Blog</a>
       </li>
       <!--item dropdown-->
       <li class="nav-item dropdown" >
@@ -50,18 +93,79 @@
      </ul>
    
      <input id="inputsearch" class="form-control" type="search" placeholder="Search.." aria-label="Search">
-     <button id="btnsearch" class="btn btn-success" type="submit">Search</button>
+     <button id="btnsearch" class="btn btn-secondary" type="submit">Search</button>
     
     </div>
     </nav>
     <div id="main">
       <div class="box">
-          <h1>Code For Your Life</h1>
+
+
+          <div class = "con1">
+          <i class="fas fa-laptop" id="iconcomputer"></i>
+          </div>
+          <div class="con">  <h1 id ="nhead">Code For Your Life</h1></div>
+       
+
+          <div class ="con2">
+          <button class="btn btn-primary btn-lg " id = "yes">Yes</button>
           <button class="btn btn-primary btn-lg"id ="getstart">Get Start</button>
+          <button class="btn btn-primary btn-lg " id = "no">No</button>
+          </div>
+
+
       </div>
 
       
     </div>
+    <div id="learn">
+      <div id="learnpic">
+        <div id ='pic'><i class="fas fa-book-open" id="book"></i></div>
+
+      </div>
+      <div id ="learndescribe">
+        
+      <div id ='learntext'>
+        <h1 id ="texthlearn">Learning</h1>
+        <p id="textplearn"style="font-size:20px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusantium eaque ab nisi, rerum ipsum ducimus sint, veritatis aperiam autem sapiente vitae omnis neque quia ea inventore voluptates quos laudantium!</p>
+
+      </div>
+
+      </div>
+    </div>
+    <div id ="box2">
+    </div>
+    <div id="box3">
+      <div id="blogdescribe">
+        <div id="blogtext">
+          <h1 id ="texthblog">Blog</h1>
+          <p id="textpblog"style="font-size:20px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusantium eaque ab nisi, rerum ipsum ducimus sint, veritatis aperiam autem sapiente vitae omnis neque quia ea inventore voluptates quos laudantium!</p>
+        </div>
+        </div>
+      <div id="blogpic"><i class="fab fa-blogger"  id="blogger"></i></div>
+
+    </div>
+
+   <div class="footerbox" style="background: lightgrey">
+
+    <div id ="confoot"><div class="container" >
+      
+    <ul  >
+      <li><i class="fab fa-facebook"></i></li>
+      <li><i class="fab fa-line"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+      <li><i class="fab fa-twitter-square"></i></li>
+
+    </ul>
+    
+    <div id="contact"> <h2>Contact: 099999999</h2></div>
+   
+  </div> 
+    </div>
+    <div id ="tabfoot"><h5>@copyright 2019 www.555.com</h3></div>
+
+   </div>
+  
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
