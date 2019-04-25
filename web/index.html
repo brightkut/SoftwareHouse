@@ -14,46 +14,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--import from style css-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>SoftwareHouse</title>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body >
+      <script type = "text/javascript" src = "js/active.js"></script>
 
-    <script>
-      $(document).ready(function(){
-        
-        
 
+      <!--navbar-->
     
-        
-        $("#getstart").click(function(){
-          
-          $("#yes").toggleClass("toggled");
-          $("#no").toggleClass("toggled");
-          $("#getstart").toggleClass("toggled");
-          $("#nhead").text("Are you Sure ?");
-
-        });
-        $("#no").click(function(){
-          $("#yes").toggleClass("toggled");
-          $("#no").toggleClass("toggled");
-          $("#getstart").toggleClass("toggled");
-          $("#nhead").text("Code For Your Life");
-
-
-
-        });
-      });
-  
-    
-    
-    </script>
-
-      
-
-    
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-spy="scroll" data-target=".navbar" data-offset="50">
       <!--button collaspe-->
       <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
         <span class="navbar-toggler-icon"></span>
@@ -97,6 +68,11 @@
     
     </div>
     </nav>
+
+    <!--end navbar -->
+
+
+
     <div id="main">
       <div class="box">
 
@@ -108,9 +84,9 @@
        
 
           <div class ="con2">
-          <button class="btn btn-primary btn-lg " id = "yes">Yes</button>
-          <button class="btn btn-primary btn-lg"id ="getstart">Get Start</button>
-          <button class="btn btn-primary btn-lg " id = "no">No</button>
+          <a class="btn btn-primary btn-lg " id = "yes" href="login.html" >Yes</a>
+          <a class="btn btn-primary btn-lg"id ="getstart">Get Start</a>
+          <a class="btn btn-primary btn-lg " id = "no">No</a>
           </div>
 
 
@@ -165,7 +141,8 @@
     <div id ="tabfoot"><h5>@copyright 2019 www.555.com</h3></div>
 
    </div>
-  
+
+
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

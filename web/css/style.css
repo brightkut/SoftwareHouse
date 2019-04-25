@@ -45,6 +45,7 @@
    
 }#getstart{
     margin-top: 2%;
+    color: white;
   
     
 }
@@ -56,6 +57,7 @@
 #yes ,#no{
     margin-top: 2%;
     display: none;
+    color: white;
    
 }
 #no{
