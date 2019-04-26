@@ -12,8 +12,9 @@
     margin-right: 3%;
 
 }
-#iconcoder:hover{
+#iconcoderlink:hover{
     color: lightgrey;
+    text-decoration: none;
 }
 .dropdown-item{
     background: lightblue;
