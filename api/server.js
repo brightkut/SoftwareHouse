@@ -4,7 +4,9 @@ var app = express();
 //import mysql 
 var mysql = require('mysql');
 
+//use file with front end --> folder web
 app.use(express.static('../web'));
+
 //port 
 var PORT = process.env.PORT || 8080;
 
