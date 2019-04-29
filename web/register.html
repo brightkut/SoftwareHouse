@@ -18,11 +18,24 @@
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <!--import from style register css-->
       <link rel="stylesheet" type="text/css" href="css/styleRegister.css">
+
+      <link rel="icon" type="img/png" href="img/background.png">
+
+      <link rel="icon" type="img/jpg" href="img/community.jpg">
+      <link rel="icon" type="img/jpg" href="img/bg.jpg">
+      <link rel="icon" type="img/jpg" href="img/bg2.jpg">
+      <link rel="icon" type="img/jpg" href="img/book.jpg">
+      <link rel="icon" type="img/jpg" href="img/header.jpg">
+
+       
+       
       <title>SoftwareHouse</title>
     </head>
     <body >
-        <script type = "text/javascript" src = "js/active.js"></script>
-  
+    <!--import registerActive.js-->
+    <script type="text/javascript" src="js/registerActive.js"></script>
+     
+
   
         <!--navbar-->
       
@@ -92,7 +105,7 @@
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
 
                             </div>
-                            <input type="text" class="form-control" placeholder="username">
+                            <input id = "username" type="text" class="form-control" placeholder="username">
 
                         </div>
                         <!--input email-->
@@ -100,28 +113,28 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                                  </div>
-                                <input name="" class="form-control" placeholder="Email address" type="email">
+                                <input id="email" class="form-control" placeholder="Email address" type="email">
                             </div> 
                         <!--input phone-->
                             <div class="form-group input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
                                     </div>
-                                    <select class="custom-select" style="max-width: 120px;">
+                                    <select id ="phone"class="custom-select" style="max-width: 120px;">
                                         <option value="+971">+971</option>
                                         <option value="+972">+972</option>
                                         <option value="+198">+198</option>
                                         <option value="+701">+701</option>
                                         <option  selected =""value="+66">+66</option>
                                     </select>
-                                    <input name="" class="form-control" placeholder="Phone number" type="text">
+                                    <input  class="form-control" placeholder="Phone number" type="text">
                                 </div> 
                                 <!--input job-->
                             <div class="form-group input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"> <i class="fa fa-building"></i> </span>
                                     </div>
-                                    <select class="form-control">
+                                    <select id ="job" class="form-control">
                                         <option selected=""> Select job type</option>
                                         <option>Programmer</option>
                                         <option>Manager</option>
@@ -133,17 +146,17 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                                         </div>
-                                        <input class="form-control" placeholder="Create password" type="password">
+                                        <input id ="password"class="form-control" placeholder="Create password" type="password">
                                     </div> 
                                     <!--input confirm-->
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                                         </div>
-                                        <input class="form-control" placeholder="Repeat password" type="password">
+                                        <input id = "repeatpassword"class="form-control" placeholder="Repeat password" type="password">
                                     </div>
                                     <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-block"> Create Account</button>
+                                            <button id ="regisbutton" type="button" class="btn btn-primary btn-block"> Create Account</button>
                                         </div> <!-- form-group// -->      
                                         <p class="text-center"style="color: white;">Have an account? <a href="login.html"style="color: lightblue;">Log In</a></p>      
 
@@ -164,7 +177,7 @@
     
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>

@@ -5,10 +5,15 @@
             butno();
        
           });
+          
+
+
         function butget(){
               $("#getstart").click(function(){
               
               $("#yes").toggleClass("toggled");
+             
+              
               $("#no").toggleClass("toggled");
               $("#getstart").toggleClass("toggled");
               $("#nhead").text("Are you Sure ?");

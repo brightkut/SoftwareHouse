@@ -3,8 +3,10 @@ var express = require('express');
 var app = express();
 //import mysql 
 var mysql = require('mysql');
+
+app.use(express.static('../web'));
 //port 
-var port = 8080;
+var PORT = process.env.PORT || 8080;
 
 
 var con = mysql.createConnection({
@@ -13,6 +15,13 @@ var con = mysql.createConnection({
   password: "bright356" ,
   port: 3306,
   database: "sampledatabase"
+
+});
+
+app.get('/test',function(req,res){
+  console.log("route test");
+  res.send('route tess');
+  
 
 });
 
@@ -68,7 +77,7 @@ app.post('/register',function(req,res){
 });
 
 //port listen
-app.listen(port,function(){
-    console.log("Server is open in port : " + port);
+app.listen(PORT,function(){
+    console.log("Server is open in port : " + PORT);
  
 });
