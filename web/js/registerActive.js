@@ -19,7 +19,7 @@ $(document).ready(() => {
 
     $.ajax({
         type: 'post',
-        url: '/register',
+        url: 'localhost:8080/register',
         data: userobj_json,
         contentType: 'application/json',
         // if api response it will run success

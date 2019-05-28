@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 //use file with front end --> folder web
-app.use(express.static('../web'));
+//app.use(express.static('../web'));
 
 //port 
 var PORT = process.env.PORT || 8080;
