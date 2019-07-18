@@ -17,6 +17,7 @@ $(document).ready(() => {
     console.log(userobj_json);
     
 
+    // send data from front to back
     $.ajax({
         type: 'post',
         url: 'localhost:8080/register',
